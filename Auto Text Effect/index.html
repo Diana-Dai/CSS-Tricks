@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Diana_Dai">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="ie-stand">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2181653_ydbph5zpe9q.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h3>Password Generator</h3>
+        <div class="result_container">
+            <span id="result">aaaasddassa</span>
+            <button id="clipboard"><i class="iconfont icon-copy"></i></button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label for="length">Password Length</label>
+                <input id="length" value="20" type="number" min="10" max="20" checked>                
+            </div>
+            <div class="setting">
+                <label for="uppercase">Include uppercase letters</label>
+                <input id="uppercase" type="checkbox" checked>
+            </div>
+            <div class="setting">
+                <label for="lowercase">Include lowercase letters</label>
+                <input id="lowercase" type="checkbox" checked>
+            </div>
+            <div class="setting">
+                <label for="numbers">Include numbers</label>
+                <input id="numbers" type="checkbox" checked>
+            </div>
+            <div class="setting">
+                <label for="symbols">Include symbols</label>
+                <input id="symbols" type="checkbox" checked>
+            </div>
+            <button id="submit">Generate password</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="demo.js"></script>
+</body>
+
+</html>
