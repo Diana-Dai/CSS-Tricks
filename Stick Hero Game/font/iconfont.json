@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "68174811",
+      "name": "icon_报告上传report",
+      "font_class": "icon_baogaoshangchuanreport",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "18729623",
+      "name": "领导",
+      "font_class": "lingdao",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    }
+  ]
+}
