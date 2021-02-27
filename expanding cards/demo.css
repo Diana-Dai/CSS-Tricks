@@ -1,0 +1,21 @@
+#container {
+    min-height: 100vh;
+    margin: 40px;
+    margin-right: 0;
+}
+
+.list_row {
+    display: flex;
+    width: 100%;
+}
+
+.list_item {
+    flex: 0.5;
+    margin-right: 40px;
+    height: 80vh;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: flex 0.7s ease-in;
+}
