@@ -1,0 +1,213 @@
+/* Main */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #82d2ff;
+  color: #222;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.8em;
+  float: left;
+  /* letter-spacing: -0.05em; */
+  position: relative;
+  height: 90px;
+  margin: 0;
+  left: -20px;
+}
+
+h1 a {
+  color: #222;
+  display: block;
+  transition: 0.4s;
+  padding: 0px 20px;
+  font-size: 1em;
+}
+
+h1 a:hover {
+  color: #fff;
+  background: #222;
+}
+
+h1 a p {
+  display: inline;
+  font-size: .8em;
+}
+
+header nav {
+  float: right;
+  display: block;
+}
+
+header nav a {
+  margin-left: 30px;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e84b98;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+.container {
+  height: 100%;
+}
+
+.header {
+  height: auto;
+}
+
+/* headerlayer */
+.headerlayer .header-bg {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  background-image: url("./");
+}
+
+
+/* header*/
+header {
+  min-width: 720px;
+  position: fixed;
+  width: 80%;
+  top: 50px;
+  left: 10%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+header:hover>.inner {
+  transform: translateZ(0px) rotateX(-10deg);
+}
+
+header:hover .top {
+  background-color: #fff;
+}
+
+header:hover .front {
+  background-color: #f0f0f0;
+}
+
+header.topspin>.inner {
+  transform: translateZ(0px) rotateX(-90deg);
+}
+
+header.topspin .top {
+  background-color: #fff;
+}
+
+header.topspin .front {
+  background-color: #ccc;
+}
+
+header .top p {
+  padding: 16px 0px;
+  line-height: 150%;
+  font-size: 18px;
+}
+
+header {
+  cursor: pointer;
+  z-index: 100;
+  top: 20px;
+  left: 0px;
+  width: 90%;
+  margin-left: 50%;
+  left: -45%;
+  height: 90px;
+  perspective: 3000px;
+  transition: 0.4s;
+}
+
+header>.inner {
+  transform-style: preserve-3d;
+  transition: 0.4s;
+  height: 90px;
+  position: relative;
+}
+
+/* front&top */
+header .front,
+header .top {
+  position: absolute;
+  height: 90px;
+  width: 100%;
+  line-height: 90px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+header.topspin>.inner {
+  transform: translateZ(0px) rotateX(-90deg);
+}
+
+header.topspin .top {
+  background-color: #fff;
+}
+
+header.topspin .front {
+  background-color: #ccc;
+}
+
+header .front>.inner,
+header .top>.inner {
+  padding: 0px 20px;
+}
+
+header .front {
+  background-color: #fff;
+  transform: translateZ(45px);
+}
+
+header .top {
+  background-color: #ccc;
+  transform: rotateX(90deg) translateZ(45px);
+}
+
+header .top p {
+  padding: 10px 0px;
+  line-height: 150%;
+  font-size: 13px;
+}
+
+header .top p a {
+  color: #222;
+  border-bottom: 2px solid #e84b98;
+  padding: 2px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+header .top p a:hover {
+  border-bottom: 2px solid #fff;
+  background: #e84b98;
+  color: #fff;
+}
+
+header.fixedtop {
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  margin-left: 0px;
+}
