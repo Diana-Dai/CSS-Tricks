@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body {
+    margin: 0;
+    color: #e8eae6;
+    font-family: 'Muli', sans-serif;
+    background-color: #007965;
+}
+
+#container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid;
+}
+
+.item.hovered {
+    border: 3px dashed white;
+    background-color: black;
+}
+
+.fill {
+    height: 100%;
+    background-image: url("./flower.jpg");
+    background-size: cover;
+}
