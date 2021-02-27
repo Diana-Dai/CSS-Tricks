@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> <img id="ball" src="https://js.cx/clipart/ball.svg" alt="">
+    <script>
+        const ball = document.querySelector("#ball");
+        ball.onmousedown = function (event) {
+            let shiftX = event.clientX - ball.getBoundingClientRect().left;
+            let shiftY = event.clientY - ball.getBoundingClientRect().top;
+            ball.style.position = 'absolute';
+            ball.style.zIndex = 1000;
+            document.body.append(ball);
+            moveAt(event.clientX, event
+                .pageY);
+            console.log(event.clientX)
+            console.log(event.pageX)
+            // 移动现在位于坐标 (pageX, pageY) 上的球        
+
+            // 将初始的偏移考虑在内        
+            function moveAt(pageX, pageY) {
+                ball.style.left = pageX - shiftX + 'px';
+                ball.style.top = pageY - shiftY + 'px';
+            }
+
+            function onMouseMove(event) {
+                moveAt(event.pageX, event.pageY);
+            } // 在 mousemove 事件上移动球        
+            document.addEventListener('mousemove',
+                onMouseMove); // 放下球，并移除不需要的处理程序        
+            ball.onmouseup = function () {
+                document.removeEventListener('mousemove', onMouseMove);
+                ball.onmouseup = null;
+            };
+        };
+
+    </script>
+</body>
+
+</html>
